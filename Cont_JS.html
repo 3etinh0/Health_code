@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Health Code</title>
+    <link rel="shortcut icon" href="/Site teste/z_img/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/Site3.css">
+    <link rel="stylesheet" href="Css/TI.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><i class="fas fa-atom"></i> Health Code</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Index.html#home">Início</a></li>
+                <li><a href="../Index.html#areas">Áreas do Conhecimento</a></li>
+                <li><a href="../Index.html#resources">Recursos de Estudo</a></li>
+                <li><a href="../Index.html#about">Sobre</a></li>
+                <li><a href="../Index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="subject-grid">
+        <div class="breadcrumb">
+            <a href="../Index.html">Início</a> > <a href="recursos/conteúdo.html">Recursos de Estudo</a> > JavaScript
+        </div>
+
+        <div class="subject-card">
+            <h2><i class="fab fa-js"></i> JavaScript - Fundamentos</h2>
+            
+            <div class="subject-content">
+                <div class="summary">
+                    <h3>Resumo</h3>
+                    <p>JavaScript é uma linguagem de programação de alto nível, interpretada e com tipagem dinâmica. É uma das principais tecnologias da web, juntamente com HTML e CSS.</p>
+                </div>
+
+                <h3>Tipagem Dinâmica</h3>
+                <p>JavaScript é uma linguagem de tipagem dinâmica, ou seja, não é necessário declarar o tipo de uma variável, o tipo é definido automaticamente conforme o valor atribuído.</p>
+
+                <h3>Tipos de Variáveis</h3>
+                <ul>
+                    <li><strong>Number:</strong> qualquer número (inteiro ou decimal);</li>
+                    <li><strong>String:</strong> sequência de caracteres (textos);</li>
+                    <li><strong>Boolean:</strong> valores lógicos (true ou false);</li>
+                    <li><strong>Array:</strong> coleção ordenada de valores (lista);</li>
+                    <li><strong>Object:</strong> coleção de pares chave:valor;</li>
+                    <li><strong>Null:</strong> valor nulo proposital;</li>
+                    <li><strong>Undefined:</strong> variável declarada mas sem valor atribuído.</li>
+                </ul>
+
+                <h3>Declaração e Atribuição</h3>
+                <ul>
+                    <li><strong>Declaração:</strong> reservar um espaço na memória. <code>let nome;</code></li>
+                    <li><strong>Atribuição:</strong> dar um valor a essa variável. <code>nome = "João";</code></li>
+                    <li>Podemos fazer os dois juntos: <code>let nome = "João";</code></li>
+                </ul>
+
+                <h3>Regras para Variáveis</h3>
+                <ul>
+                    <li>Não podem conter espaços ou caracteres especiais;</li>
+                    <li>Não podem ter o mesmo nome de palavras reservadas do JavaScript;</li>
+                    <li>JavaScript é case-sensitive (diferencia letras maiúsculas e minúsculas).</li>
+                </ul>
+
+                <h3>Palavras-chave</h3>
+                <ul>
+                    <li><strong>let:</strong> cria uma variável com escopo de bloco;</li>
+                    <li><strong>const:</strong> cria uma constante (valor não muda);</li>
+                    <li><strong>var:</strong> mais antiga, com escopo de função (menos recomendada hoje).</li>
+                </ul>
+
+                <h3>Operadores de Atribuição</h3>
+                <p>Os operadores de atribuição em JavaScript são usados para atribuir valores a variáveis.</p>
+                <ul>
+                    <li><strong>=</strong> : atribuição simples;</li>
+                    <li><strong>+=</strong> : adição e atribuição;</li>
+                    <li><strong>-=</strong> : subtração e atribuição;</li>
+                    <li><strong>*=</strong> : multiplicação e atribuição;</li>
+                    <li><strong>/=</strong> : divisão e atribuição;</li>
+                    <li><strong>%=</strong> : módulo e atribuição;</li>
+                    <li><strong>**=</strong> : exponenciação e atribuição (ex: <code>x **= 2</code> equivale a <code>x = x ** 2</code>).</li>
+                </ul>
+
+                <h3>Operadores Aritméticos</h3>
+                <ul>
+                    <li><strong>+</strong> → adição</li>
+                    <li><strong>-</strong> → subtração</li>
+                    <li><strong>*</strong> → multiplicação</li>
+                    <li><strong>/</strong> → divisão</li>
+                    <li><strong>%</strong> → resto da divisão</li>
+                    <li><strong>**</strong> → exponenciação</li>
+                    <li><strong>++</strong> → incremento (aumenta 1)</li>
+                    <li><strong>--</strong> → decremento (diminui 1)</li>
+                </ul>
+
+                <h3>Conversão de Tipos</h3>
+                <ul>
+                    <li><strong>Number()</strong> → converte strings em números;</li>
+                    <li><strong>parseFloat()</strong> → converte para número com casas decimais;</li>
+                    <li><strong>parseInt()</strong> → converte para número inteiro;</li>
+                    <li><strong>toString()</strong> → transforma número em string;</li>
+                    <li><strong>toFixed(n)</strong> → define número de casas decimais;</li>
+                    <li><strong>toPrecision(n)</strong> → define quantidade de dígitos significativos.</li>
+                </ul>
+
+                <h3>Arrays</h3>
+                <p>Arrays são listas que armazenam vários valores em uma única variável.</p>
+                <pre><code>const frutas = ["Banana", "Maçã", "Laranja"];
+console.log(frutas[0]); // Banana</code></pre>
+                <ul>
+                    <li>Os índices começam do zero;</li>
+                    <li>Podemos acessar e modificar os itens pelo índice.</li>
+                </ul>
+
+                <h4>Métodos úteis:</h4>
+                <ul>
+                    <li><strong>toString()</strong> → converte o array para string;</li>
+                    <li><strong>length</strong> → retorna a quantidade de elementos;</li>
+                    <li><strong>push()</strong> → adiciona item ao final;</li>
+                    <li><strong>pop()</strong> → remove o último item.</li>
+                </ul>
+
+                <h3>Objetos</h3>
+                <p>Objetos armazenam dados em pares chave: valor.</p>
+                <pre><code>const pessoa = {
+    nome: "Maria",
+    idade: 30,
+    profissao: "Programadora"
+};
+console.log(pessoa.nome); // Maria</code></pre>
+                <ul>
+                    <li>Podemos acessar usando <code>obj.chave</code> ou <code>obj["chave"]</code>.</li>
+                </ul>
+
+                <h3>Estrutura de Dados: Vetores</h3>
+                <p>Vetores são estruturas de dados lineares que armazenam uma sequência de elementos do mesmo tipo, acessados por índices numéricos.</p>
+                <p>No JavaScript, os vetores são representados pelos Arrays.</p>
+
+                <h4>Por que usar vetores?</h4>
+                <ul>
+                    <li>Organização e agrupamento de dados.</li>
+                    <li>Facilidade de acesso com base em índice.</li>
+                    <li>Boa performance em operações simples.</li>
+                </ul>
+
+                <h4>Exemplo de uso de vetor:</h4>
+                <pre><code>const numeros = [10, 20, 30, 40];
+console.log(numeros[2]); // 30</code></pre>
+            </div>
+
+            <div class="study-resources">
+                <h3>Recursos de Estudo</h3>
+                <div class="resource-links">
+                    <a href="https://www.cursoemvideo.com/course/javascript/" class="resource-btn" target="_blank">
+                        <i class="fas fa-video"></i> Curso em Vídeo
+                    </a>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="resource-btn" target="_blank">
+                        <i class="fas fa-book"></i> MDN Web Docs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>
+                    <i class="fas fa-atom"></i>
+                    HEALTH CODE
+                </h3>
+                <p>Projeto de ensino igualitário aluno por aluno. </br>
+                   Que compartilhando alcancemos um futuro saúdavel intelectualmente.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Diretrizes para Autores</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Portal Acadêmico do Conhecimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

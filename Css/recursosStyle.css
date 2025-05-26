@@ -1,0 +1,344 @@
+/* Estilos específicos para páginas de recursos */
+.resource-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #f4902b;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.resource-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.resource-intro {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Categorias e recursos */
+.resource-categories {
+    margin-top: 40px;
+}
+
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-section h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f4902b;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ===================================================BOOOOOOXXX================ */
+.resource-item{
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+
+}
+/* ================================================================================================================================ */
+
+/* Elementos específicos para videoaulas */
+.video-thumbnail {
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 180px;
+    background-color: #eee;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Elementos específicos para cursos */
+.course-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #27ae60;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.course-badge.premium {
+    background-color: #f39c12;
+}
+
+/* Estilos comuns */
+.resource-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.resource-meta {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.resource-description {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.resource-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.resource-btn {
+    background-color: #f4902b;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resource-btn:hover {
+    background-color: #e07c1a;
+}
+
+.resource-btn.outline {
+    background-color: transparent;
+    border: 1px solid #f4902b;
+    color: #f4902b;
+}
+
+.resource-btn.outline:hover {
+    background-color: #f4902b;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-title {
+        font-size: 1.8rem;
+    }
+    
+    .resource-links {
+        flex-direction: column;
+    }
+    
+    .resource-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Estilos para as seções por área */
+.area-section {
+    margin-bottom: 50px;
+}
+
+.area-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.area-section h2 i {
+    color: #f4902b;
+}
+
+/* Badges para cursos */
+.course-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.course-badge.free {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.course-badge.premium {
+    background-color: #fff8e1;
+    color: #ff8f00;
+}
+
+/* Thumbnail de vídeo */
+.video-thumbnail {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+/* Grid de vídeos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.resource-meta {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.resource-description {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background-color: #f4902b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.video-link:hover {
+    background-color: #e07c1a;
+}
+
+.video-link i {
+    font-size: 0.8rem;
+}
+
+.resource-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+

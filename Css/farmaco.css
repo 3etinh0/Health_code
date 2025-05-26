@@ -1,0 +1,145 @@
+/* Estilos para páginas de conteúdo específico */
+.subject-page {
+    padding-top: 40px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.breadcrumb {
+    padding: 15px 5%;
+    max-width: 1400px;
+    margin: 0 auto 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #f4902b;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.subject-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.subject-card h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.subject-content {
+    margin-top: 30px;
+}
+
+.subject-content h3 {
+    color: #2c3e50;
+    margin: 30px 0 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f4902b;
+    padding-bottom: 8px;
+}
+
+.area-item {
+    margin-bottom: 30px;
+}
+
+.area-item h4 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-item ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.area-item li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.study-resources {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.study-resources h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.resource-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #f4902b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.resource-btn:hover {
+    background-color: #e07c1a;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .subject-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .resource-links {
+        flex-direction: column;
+    }
+    
+    .resource-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
